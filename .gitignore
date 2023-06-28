@@ -1,0 +1,9 @@
+### RalloSA ###
+
+# GIT folder
+.git/
+# VSCode 
+.vscode/
+#Temp folder
+.TEMP/
+.TEMP/
