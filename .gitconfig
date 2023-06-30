@@ -1,0 +1,16 @@
+# Copy of the global file (c:\users\<userName>\.gitconfig) for saving gitconfig developments
+## Копия глобального файла (c:\users\<userName>\.gitconfig) для сохранения наработок по gitconfig
+# Command to edit local configuration file:    > code .\.git\config
+## Команда для редагування локального файлу конфігурації:
+## code .\.git\config  ( або code ~\.giconfig  - не в певнений що правильно працює )
+
+[user]
+	name = Serhii Rallo
+	email = rallo83@gmail.com
+[alias]
+	hist = log --pretty=format:\"red.%h %ad | %s%d [%an]\" --graph --date=short
+	grog = log --graph --abbrev-commit --decorate --all --pretty=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)'
+
+	lg = log --color --graph --abbrev-commit --pretty=format:'%C(cyan italic)%ci %Cgreen(%cr) %Cred%h%Creset  %s %C(bold blue)<%an>%Creset %C(yellow)%d%Creset' 
+
+## Як виявилося, при використанні подвійних кавичок "" у format виникають проблеми з пробілами, а строка format з одинарними кавичками - працює нормально
